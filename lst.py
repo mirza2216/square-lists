@@ -1,0 +1,26 @@
+def main ():
+    print ("Please enter a list of numbers in seperate line .Type done at the end:")
+    input_num =read_lst()
+    sqr_lst=sqrng_the_lst(input_num)
+    print ("the sqare of the numbers are:" , sqr_lst)
+
+def read_lst() :
+    seen_done=False
+    res_lst=[]
+    while (seen_done==False):
+        curr_input=input()
+        if(curr_input=='done'):
+            seen_done=True
+        else:
+            curr=int(curr_input)
+            res_lst.append(curr)
+    return res_lst            
+
+def sqrng_the_lst (lst):
+    res_lst=[]
+    for i in range(len(lst)):
+        lst[i]=lst[i]*lst[i]
+    res_lst.append(lst)
+    return res_lst
+
+main()        
