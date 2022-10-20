@@ -1,3 +1,4 @@
 #demo
 
-squaring the integer lists
+def create_sqr_lst(lst):
+
